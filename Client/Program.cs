@@ -17,6 +17,7 @@ namespace Client
 
         static void Main(string[] args)
         {
+            // DEV
             _circuitBreakerPolicy = Policy
               .Handle<HttpRequestException>()
               .CircuitBreakerAsync(
